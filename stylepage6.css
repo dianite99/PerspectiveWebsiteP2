@@ -1,0 +1,47 @@
+.outer-container {
+    display: grid;
+    width:100%;
+    height:100vh;
+    grid-template-rows: repeat(8, 12.5vh);
+    grid-template-columns: repeat(5, 20%);
+}
+
+.inner-container{
+    grid-area: 1/2/8/6;
+    background-image: url("images/Cup4.png");
+    background-size: cover;
+}
+
+.inner-container3{
+    grid-area: 2/1/8/2;
+    background-image: url("images/Cup6.png");
+    background-size: contain;
+}
+
+.header {
+    grid-area: 1/1/2/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    grid-area: 8/1/9/6;
+}
+
+.image1 {
+    z-index: 1;
+    grid-area: 8/1/9/6;
+}
+
+.image2 {
+    z-index: 1;
+    grid-area: 8/5/9/6;
+    margin-left: 45%;
+}
+
+.image3 {
+    z-index: 1;
+    grid-area: 2/2/8/5;
+
+}
